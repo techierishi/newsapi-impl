@@ -1,0 +1,18 @@
+footer {
+    padding: 10px 0px;
+    background-color: #171717;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 0;
+    margin-left: 20px;
+    color: #8e8e8e;
+    font-family: 'Cambo', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}

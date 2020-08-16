@@ -14,5 +14,6 @@ yarn-error.log*
 
 package-lock.json
 config.eg.js
+db.json
 
 

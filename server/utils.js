@@ -9,9 +9,7 @@ Utils.createDefaultUser = function (db) {
         username: Config.DEFAULT_USERNAME,
         password: Config.DEFAULT_PASSWORD,
       },
-    ],
-    savedArticles: [],
-    listOfSources: [],
+    ]
   }).write();
 };
 

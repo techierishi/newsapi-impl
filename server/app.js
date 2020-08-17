@@ -59,8 +59,7 @@ module.exports = function (app) {
     console.log('finalURL',finalURL);
     Axios.get(finalURL)
       .then((response) => {
-        console.log(response.data.url);
-        console.log(response.data.explanation);
+        console.log('app.get("/news").response', response);
         if (Utils.is(() => response.data.status, "") === "ok") {
           res.status(200).json(Utils.success(response.data));
         } else {
@@ -68,7 +67,7 @@ module.exports = function (app) {
         }
       })
       .catch((error) => {
-        console.log(error);
+        console.log('app.get("/news").error',error);
         res.status(500).json(Utils.error(error.message));
       });
   });

@@ -40,7 +40,7 @@ export default function Articles() {
     <Container fluid className="main-content-container px-4 pb-4">
       <Row>
         <Col lg="3" md="12">
-          <UserDetails />
+          <UserDetails name={Util.is(()=> Util.parseJwt(sessionStorage.getItem('jwt')), '')} />
         </Col>
         <Col lg="5" md="12">
           {articles.length ? (

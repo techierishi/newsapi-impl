@@ -36,6 +36,7 @@ Utils.success = function (data, message = "") {
   {
     return {
       status: true,
+      message,
       data,
     };
   }

@@ -27,11 +27,19 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "react:test": "jest --watchAll --config jest.config.js --testPathPattern=src/__test__",
+    "node:test": "jest --watchAll --testPathPattern=server/__test__",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-jest": "^24.9.0",
     "concurrently": "^5.3.0",
-    "nodemon": "^2.0.4"
+    "jest": "^24.9.0",
+    "node-mocks-http": "^1.8.1",
+    "nodemon": "^2.0.4",
+    "react-test-renderer": "^16.13.1"
   },
   "browserslist": {
     "production": [

@@ -5,6 +5,7 @@ module.exports.Config = {
   DB_NAME: "db.json",
   ROUTE: {
     LOGIN: "/login",
+    NEWS: "/news",
   },
   TOKEN_HEADER: "x-access-token",
   NEWS_API_URL: "http://newsapi.org/v2/top-headlines?country=us",

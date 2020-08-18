@@ -28,6 +28,18 @@ npm install
 npm run start:dev
 ```
 
+3. Test
+
+- Backend
+```sh
+npm run node:test
+```
+
+- Frontend
+```sh
+npm run react:test
+```
+
 4. Open your browser and go to [http://localhost:3000/](http://localhost:3000/)
 
 ### Tech Stack Used
